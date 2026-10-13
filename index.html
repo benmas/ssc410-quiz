@@ -362,7 +362,7 @@
 (function () {
   "use strict";
 
-  const APP_VERSION = "2.1";
+  const APP_VERSION = "2.3";
 
   /* ===================================================================
      1. UI SETTINGS (exam settings come from the EXAM block below)
@@ -404,25 +404,33 @@
     },
     "cipher": {
       "alg": "AES-GCM",
-      "iv": "A0CKOuuL/l1WWR5a",
-      "data": "69Djt2jcO+qGf8ZErAeQsECpLughTtYoYpYxcr/bg50S2kDN0qLFU6wbxt1VuUKCeV8i0TuvByTN77iH/Mg25t+cdnusRUNxpfOABgGspTjvgzSWnPBmzcvkj+sY7Gi1poXkGISGYukrgb78oQ+pcGHoQ2skhYAL3uiBK9Lm/B3Y2GB4ExiRDrhiYIh65q7FOg6ctyADzNGFNdDNJP2BFjpW4MvSvj/a01cYHblroecN5Q/9HXhC5Fh/E9wr8THSixfPzNgpVS6cTlEMVztzguPlXslfNzEpPF+h/JiT7R2Vxtch/D/ubfyOpedZ/zuS6gJ36lUediw24CzyxurseyH724IiNUQiNS3HSbO9eSYOKu/Q8NqJQsS0uluewdDEJ102PdOdBNVz22AK+Yb0M0itz87WttcHEOX6875pew8SRmBg9B0+0XRFZBJMGq1iVxMY7PUf1bn+W1XTSzoPWch0lxeNaiEqomjpKpipwBETBFZgg5R693Wrp6NMTsYkG2DhtmgOEPlKRcPL3fu2pKJ/+gW3BR1DnrRVfgcHVsyp3SmLCqZLUcvUCzEn0q5UdJX+voEpVUvETXd4/tGuyxjlRIT5CAa4Myr6jVHIQHlhH9udDC/UHOUenVehEwMJgYV5UTqgGh57XWeaUw+8Ogu8NrrASUl1MwdckSJE0JhSQCOldIPn0YglwvDcMU+1q1A3lHAkV5MdeiW/EOjpkvOJfQ3Byk+Sia26Xw8dqH5pu4/rlFMFC+cSPdio4cv8y3sMstkUtyAPO3NPTOHknBzvG251okE6jz7TOmeRUy+T38tsg/SqSUeuPNobyIfvlfa4uRuG1HDdkSGTWbg1K5tncq/aehtinv7+nHKMTC+UBwKZ0drHk9QzfBKT2VOgJL0R5TsOoKGk0GO6SwLw382dqGR8PZfEtraEZRcFSHQM3WI5d19EK8zggxYuw/VjPWR6wqJt9Xrx5DEUZqY56xRKU4yxBAvxMg0V9ZUMArmPihBuShoQ14144s7fb3RgDfhM6MTQMb8GULQZzNUjI1Dwgk1J5M3472QmzkgZ7X5vBlkXJqgB4E/Zc+rTH3LaDwrPYaJzKPu8FOrKOL3z1z81fV8umr7U6tT57ihzXVSpwWSgKYHPbLMqyiVhcu86bay7Sy9U2ujhWhLy1W8oL+Unx2j3qRu1iewDQGdq1tg0UDQ6+X9Aifdf0IYnl6+jpeTIde6Jiz66c3g/w7z/d2wJcOKtzgBPLUaIBxHudELkA9sTIU1VrvsoZz+SFhRFlI2BWqSG9635Ge48hw0C919U6lbl9Lb5BAyl6sxphoCaxL+mXYSy8Hz6RBswtI9WcO1i8pxfXtt3qJug1yE4pOmmvbKJVfyptBQD8mEvSLONbf96GjK1zjVXwmwU8K6znuvq5my1+mA/fOpWLJz6HaCN4B3IkxAU18fKR4/ZfA9gFrFwCG4PMq0SoQNzy86eiBvyqwMA38gfPACA09GojJW8hYdmknkCCyM4iUaK1cqUuzWf98DBvvmXWv/d5CdrRAOKBZCjv5AIWynNeoP0iHRFo7jgXFmOSxJUzA2Ea1l7wm7wXKq/FiHSS7WP7/magqR4cJx4W4C1Hc/X3jI2SJAoj2HShNDDL8+fv1Us6lwtmZL1aSVt/N8rF7/7t35XLLRV1C4yK6Zw1XMJmFm3POTykE6tpWGorsbkOWDnGhcNXTFdtGzBQawD4LDjO7y2CQFqi+enDzayz2JV+NjqrZ+gAWSXT6R/YocqkGN374k2hAvx+QDFSHyxdr7eu2dgDhFpfIieEJAnDEP813dJRnv3uJq3cRodBIu4WntXdacL+rRb7eyKGj7ahkFdbm5TMspawcQ8Dr/SkCeMxutVzYlkbOeEj9qOzJ5Lj1wQ5kCvGAOy9SJXgHQA"
+      "iv": "in0S0t0ijeZ89J5h",
+      "data": "d42xJNtuQtD09W3VZt8meegp+0ZQxYBBfawlmCJAHwpO2yDYQJNIzdW2Vd/e2J0xsROd8n61fMzv6EhLry8jx72nFFhd2h1kclTg5RYvMIxPTcdOeKmjByStAkFhP2uhj4QALcA/UwgQ56nE2llmWTBUI3aFdH9NZDGigoBviN12xtJVq5/42N8HG4nEfwqepb00CxtPLL7S8/+3cdkqXrLZz6MB6lp5O5bQSipVzFC/gQqsPsZzmL8PlhzVS9y9CxWtsjh2p/uaaehdkxAeWHTwQFHG66UT1URP88xOm4Fkv3LJPqJSE7/bU/UMivPqs/vajXvo2d92qS2LcmC21+eaW8RoDBtYidI5DNO5oCJWnxD5Zv5N94HK/Y0X0KwUCGi2EKlajDA7NnDB7z6ZL75Sq5PvBjaQs1SelkNFHtV2bqMBMB8tyzR6gYq925nhHjaAyUbT75I4xte8B3UAZi/tL4AzqNfSRJTgXRhC1gwDqcMKKZEp4UZb8WcF2trWGjmTSzJK1DrzAoQgWzDCIHFnCK9dz2H1TRJRPxUqc/x/Ppt5FhLdbPqMuwfvM4p9kodFyUAJWYz7nOjeMBKKvWka2i3ACyUm6udm2W4zmxTOqx5eEFVIbmXHkzFOVzY0dfQLktxBuITGjv2S1OVZWsojTyXkzOiJ3EuALYAgAa0OwSRJiQTUiUdRT66oN/krNCjbcJF4ofWh1P3pd6zivyWpcIEtlk4NkT7jKySZra694MZ7oKCFcxWMK3bg9nzyJGTziJjpOezQSTupDg81gZPG2fbd2duEV9iFnNX13+8Y3/6ci7cf08DStIi83udppnjGeXib8JWzmviSJKXjw3iHvP7ElPIkP1LoySG4W7MOWiXJsTDTtBwPWOTCrRdtdcw1aNJIw6aE9Y0YxvtsCIj1UpZmJ3GpoTE0rhpnJdis56jST3eJ86s3x6pRP4Z0XUZVfkuXXGucDcYLJLZ6Nguhp632XCp3Mnpw5fVmirBAN4NN3xjXX1vmzxmYb5NNEzFkaB/AI+ldu+5ocFAsIyOuo82IkjMqiPHSnjPESP5vvOhxO5qNVAkaXfsT1s0ZpV62hcYYjdUE8dwfhHM0koLVDtbdezKmrshRwZ3qdsX5KDhvT4PqNeHIKP7QpXhBRCZCoNg3nsp8P+RCRCkHLglJ6Jtgk4+bw+ghRLqeLv0EkvuqAnDE77DW3mg4+soZSoDFTUk5BMzqY38CUvx7XJ6Uxhz+QJQP95tQRnYydnakLhaKE4572YwUmjkVF3FFbDjTi9HsBb8pYZ7WEazVkcYrDWciU9PVrZo5R8emZtbvfCd3jblCF01cJ/M2y631lVrZIb0OI5J8SIr5eBesqT0RnTiEIlNja2JiJiP+ebtAcwZa/wj5svB+xjmI/KU3gHjGhyQXo2b10vptB3Y4nmi+nsKLPGj8RQhVl3/oEVSl+DacQE7Wn2LFqNoF8o5t3Xn78YRpVNJei4Ks9WygJl4agJhY1huBEcH1rXh85A3aTpSmu34O7O9xHi5s9E+fzocEIKDnoV4LBSf2ke+9wl/Jjz+iCbZ8bwLCSfSa5of+LQ3RMt9Is7Mit0iAIXUDZFgSkPQQQcYVR2XUEi55w0aLg1GCshDJ8FbG15OYQobhp/S0mh6YekdQrtynKSarLslsMyy3BEBnIZDRK133Efhcr6NrxaVrdsLxZbsYSnDq01RrP8DqMbDjP3OQck9+nA/sCL6wUh9tzZmeZNfYw5Qi2jQjnJ0rXKzGGzGaG6aMc3eJSv6KHExHoT6WL4HMzwIM6dXQEM8WxuXTuXmeVPQCyDqlYT7bY0QqrVyiIaP8JHbTZGaglkK/xYwt/hbqqh9CtQ29ueM7TMiy6v565VKMID5vQa1HNgctQb4ft0Ia3+42JgyTGUEO"
     },
     "slots": [
       {
         "label": "standard",
         "multiplier": 1,
         "accommodated": false,
-        "salt": "4AdTTMGOJxnfmMIC05GoJw==",
-        "iv": "4zqMdDeNCIay13vo",
-        "key": "B/pR99Et2OOPZ5TZ7Yz2vWV7Zp2CITXkZDhNtRrMBR1C7gjxW7jL+eITaJ9EBVBR"
+        "salt": "BuCBECjeGpXodZ9k70BIuA==",
+        "iv": "m+5tnVmeMYwJ8i7v",
+        "key": "7wA0gKo7HjP9rpCDqpqbwEpuiR6wITFBtsEjr9qNnKrtZ2dEkHJjuP0dWYtOxXyn"
       },
       {
         "label": "extended time",
         "multiplier": 1.5,
         "accommodated": true,
-        "salt": "5GcvIKKDtqS26VOZ45YSng==",
-        "iv": "6E1hZFroJ1tBm4bb",
-        "key": "6gwtgzn0JbBRkItm3GEvkJFL0k8sYUuEHrSfxfdGURE0cCpOIOTPAvDOTidkRb6P"
+        "salt": "jJEqjJsVdc2fCPnCXgfPUQ==",
+        "iv": "VUJGdiB7xfPTd/Sg",
+        "key": "g4VEXsBnJnykx38pdXN4cqmGx+SXUQigFRNXtj72kRmMI28i+MrMOEluzDepIR/d"
+      },
+      {
+        "label": "instructor review",
+        "multiplier": 1,
+        "accommodated": false,
+        "salt": "bA+dTTBkeTQn+qB2SG8mDg==",
+        "iv": "FVnQ43lv8zXcX1Ua",
+        "key": "ly9ndzjYo6H4QDVVt7F0JXQluYIBSyYQEt2isdaxtUTq1kU7QH7wyi5caUrGERRt"
       }
     ]
   };
@@ -433,6 +441,7 @@
   const STATE_VERSION = 2;
   const CODE_PREFIX = "EUQ2";
   const STORAGE_KEY = "exam-spa:" + EXAM.examId;
+  const REVIEW_REQUEST = new URLSearchParams(location.search).get("review") === "1";
   const SEALED = Array.isArray(EXAM.slots) && EXAM.slots.length > 0;
   let qById = new Map();
   function setBank(bank) { qById = new Map(bank.map(q => [q.id, q])); }
@@ -658,7 +667,7 @@
         const cek = await crypto.subtle.decrypt({ name: "AES-GCM", iv: b64ToBytes(slot.iv), additionalData: aad }, kek, b64ToBytes(slot.key));
         const cekKey = await crypto.subtle.importKey("raw", cek, "AES-GCM", false, ["decrypt"]);
         const plain = await crypto.subtle.decrypt({ name: "AES-GCM", iv: b64ToBytes(EXAM.cipher.iv), additionalData: aad }, cekKey, b64ToBytes(EXAM.cipher.data));
-        return { bank: JSON.parse(new TextDecoder().decode(plain)), slot: { label: slot.label, multiplier: slot.multiplier, accommodated: !!slot.accommodated } };
+        return { bank: JSON.parse(new TextDecoder().decode(plain)), slot: { label: slot.label, multiplier: slot.multiplier, accommodated: !!slot.accommodated, review: !!slot.review } };
       } catch (e) { /* this code does not open this slot: try the next one */ }
     }
     return null;
@@ -688,7 +697,7 @@
   function stopSpeech() { speechRun++; if (window.speechSynthesis) window.speechSynthesis.cancel(); }
   function applyReading() {
     document.body.classList.toggle("reading-mode", readingPrefs.enabled);
-    document.body.classList.toggle("allow-selection", !!(state && state.slot.accommodated));
+    document.body.classList.toggle("allow-selection", !!(state && (state.slot.accommodated || state.slot.review)));
     document.documentElement.style.setProperty("--reading-letter", readingPrefs.letter + "em");
     document.documentElement.style.setProperty("--reading-word", readingPrefs.word + "em");
     $("reading-mode").checked = readingPrefs.enabled;
@@ -746,10 +755,10 @@
     if (!state) return;
     state.lastSeen = Clock.now();
     lastSaveAt = Date.now();
-    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (e) { if (!state.storageWarning) { state.storageWarning = true; showToast("Local saving is unavailable. Do not close this page; download your certificate when finished."); } }
+    try { localStorage.setItem(STORAGE_KEY + (state.slot.review ? ":review" : ""), JSON.stringify(state)); } catch (e) { if (!state.storageWarning) { state.storageWarning = true; showToast("Local saving is unavailable. Do not close this page; download your certificate when finished."); } }
   }
   function load() {
-    try { const raw = localStorage.getItem(STORAGE_KEY); return raw ? JSON.parse(raw) : null; } catch (e) { return null; }
+    try { const raw = localStorage.getItem(STORAGE_KEY + (REVIEW_REQUEST ? ":review" : "")); return raw ? JSON.parse(raw) : null; } catch (e) { return null; }
   }
   function clearStorage() { try { localStorage.removeItem(STORAGE_KEY); } catch (e) { /* ignore */ } }
 
@@ -779,7 +788,8 @@
     const g = gateStatus();
     $("gate-msg").textContent = g.msg;
     $("gate-msg").classList.toggle("closed", !g.open);
-    $("start-btn").disabled = !g.open || fatalErrors.length > 0 || loginBusy;
+    if (REVIEW_REQUEST) $("gate-msg").textContent = "Instructor review: only the dedicated review code works here. No timer or submission.";
+    $("start-btn").disabled = (!g.open && !REVIEW_REQUEST) || fatalErrors.length > 0 || loginBusy;
   }
   function startGate() { stopGate(); updateGate(); gateTimer = setInterval(updateGate, 1000); }
   function stopGate() { if (gateTimer) clearInterval(gateTimer); gateTimer = null; }
@@ -796,6 +806,12 @@
     $("fact-duration-li").replaceChildren(el("strong", null, String(EXAM.durationMinutes)),
       ` minutes${hasExtra ? " (more if you received an extended-time code)" : ""}. When time runs out the exam is submitted automatically.`);
     $("field-code").hidden = !SEALED;
+    if (REVIEW_REQUEST) {
+      $("login-title").textContent = "Instructor review — unlimited time";
+      for (const id of ["in-first", "in-last", "in-email", "in-ack"]) { $(id).required = false; $(id).closest(".field, .check").hidden = true; }
+      $("fact-duration-li").textContent = "No timer. No submission or focus monitoring. Questions appear in their original order.";
+      $("delivery-note").textContent = "Review mode is for classroom discussion after the quiz. Keep its code private.";
+    }
     $("delivery-note").textContent = EXAM.submitUrl
       ? "When you submit, your answers and this log are sent to your instructor and you receive a receipt. You can also download a certificate as your own proof."
       : "This page sends no data anywhere: at the end you deliver your submission yourself, as a file or a code.";
@@ -807,16 +823,16 @@
       const email = $("in-email").value.trim().toLowerCase();
       const code = $("in-code").value;
       const checks = [
-        ["in-first", "err-first", first ? "" : "Enter your first name."],
-        ["in-last", "err-last", last ? "" : "Enter your last name."],
-        ["in-email", "err-email", !email ? "Enter your email." : (EMAIL_RE.test(email) ? "" : "Enter a valid email address, e.g. name@university.edu.")],
+        ["in-first", "err-first", REVIEW_REQUEST || first ? "" : "Enter your first name."],
+        ["in-last", "err-last", REVIEW_REQUEST || last ? "" : "Enter your last name."],
+        ["in-email", "err-email", REVIEW_REQUEST ? "" : !email ? "Enter your email." : (EMAIL_RE.test(email) ? "" : "Enter a valid email address, e.g. name@university.edu.")],
         ["in-code", "err-code", SEALED && !normCode(code) ? "Enter the access code." : ""],
-        ["in-ack", "err-ack", $("in-ack").checked ? "" : "Confirm the statement to continue."]
+        ["in-ack", "err-ack", REVIEW_REQUEST || $("in-ack").checked ? "" : "Confirm the statement to continue."]
       ];
       let firstInvalid = null;
       checks.forEach(([i, er, msg]) => { setFieldError(i, er, msg); if (msg && !firstInvalid) firstInvalid = $(i); });
       if (firstInvalid) { firstInvalid.focus(); return; }
-      if (!gateStatus().open) { updateGate(); return; }
+      if (!REVIEW_REQUEST && !gateStatus().open) { updateGate(); return; }
 
       loginBusy = true;
       $("start-btn").textContent = SEALED ? "Checking code…" : "Starting…";
@@ -837,14 +853,15 @@
         }
         const errs = validateBank(bank);
         if (errs.length) { showErrors("The question bank has errors, so the exam cannot start.", errs); return; }
-        if (!gateStatus().open) { updateGate(); return; }
+        if (REVIEW_REQUEST !== !!slot.review) { setFieldError("in-code", "err-code", REVIEW_REQUEST ? "Use the dedicated instructor review code." : "Open this page with ?review=1 to use the instructor review code."); return; }
+        if (!slot.review && !gateStatus().open) { updateGate(); return; }
         stopGate();
         startExam({ firstName: first, lastName: last, email }, bank, slot);
       } catch (err) {
         setFieldError("in-code", "err-code", err.message || String(err));
       } finally {
         loginBusy = false;
-        $("start-btn").textContent = "Start Quiz";
+        $("start-btn").textContent = REVIEW_REQUEST ? "Open instructor review" : "Start Quiz";
         if (!state) updateGate();
       }
     });
@@ -857,17 +874,18 @@
     setBank(bank);
     const now = Clock.now();
     let endsAt = now + EXAM.durationMinutes * 60000 * (slot.multiplier || 1);
-    if (EXAM.hardEnd) endsAt = Math.min(endsAt, Date.parse(EXAM.hardEnd));
+    if (!slot.review && EXAM.hardEnd) endsAt = Math.min(endsAt, Date.parse(EXAM.hardEnd));
+    if (slot.review) endsAt = null;
     const optOrder = {};
     bank.forEach(q => {
       const ids = getOptions(q).map(o => o.id);
-      optOrder[q.id] = q.type === "mc" ? shuffle(ids) : ids;   // True/False keeps its natural order
+      optOrder[q.id] = q.type === "mc" && !slot.review ? shuffle(ids) : ids;   // True/False keeps its natural order
     });
     state = {
-      v: STATE_VERSION, examId: EXAM.examId, appVersion: APP_VERSION,
+      v: STATE_VERSION, examId: EXAM.examId, appVersion: APP_VERSION, bankRevision: EXAM.bankRevision || null,
       sessionId: randomHex(8), phase: "exam",
       student, bank, slot,
-      order: shuffle(bank.map(q => q.id)), optOrder,
+      order: slot.review ? bank.map(q => q.id) : shuffle(bank.map(q => q.id)), optOrder,
       answers: {}, flags: {}, current: 0,
       startedAt: now, endsAt,
       clock: { source: Clock.source, offsetMs: Clock.offset },
@@ -883,6 +901,7 @@
   }
 
   function resumeExam() {
+    if (state.slot.review) { state.frozen = false; enterExam(); return; }
     const now = Clock.now();
     if (state.lastSeen && now < state.lastSeen - UI.CLOCK_JUMP_TOLERANCE_MS) {
       logClockJump(now - state.lastSeen, "Clock on reopening is earlier than the last saved activity");
@@ -907,7 +926,10 @@
     updateFocusCounter();
     buildNav();
     renderQuestion(false);
-    startTicker();
+    $("btn-submit").hidden = !!state.slot.review;
+    $("hdr-focus").hidden = !!state.slot.review;
+    if (state.slot.review) { stopTicker(); $("hdr-timer").textContent = "Unlimited review"; $("hdr-timer").setAttribute("aria-label", "Instructor review, no time limit"); $("hdr-student").textContent = "Instructor review — not a submission"; }
+    else startTicker();
   }
 
   function currentQuestion() { return qById.get(state.order[state.current]); }
@@ -933,7 +955,7 @@
     refreshOptionClasses();
     refreshFlagUi();
     $("btn-prev").disabled = state.current === 0;
-    $("btn-next").textContent = state.current === total - 1 ? "Review and submit" : "Next";
+    $("btn-next").textContent = state.current === total - 1 ? (state.slot.review ? "Back to first question" : "Review and submit") : "Next";
     updateNav();
     if (moveFocus) $("q-legend").focus();
   }
@@ -948,7 +970,7 @@
     $("q-flag-tag").hidden = !flagged;
   }
   function selectAnswer(qid, optId) {
-    if (Clock.now() >= state.endsAt) { tick(); return; }
+    if (!state.slot.review && Clock.now() >= state.endsAt) { tick(); return; }
     if (state.phase !== "exam" || state.frozen) return;
     state.answers[qid] = optId;
     save(); refreshOptionClasses(); updateNav();
@@ -1043,7 +1065,7 @@
     return secs;
   }
   function tick() {
-    if (!state || state.phase !== "exam" || state.frozen) return;
+    if (!state || state.phase !== "exam" || state.frozen || state.slot.review) return;
     checkClockJump();
     const remaining = state.endsAt - Clock.now();
     const secs = renderTimer(remaining);
@@ -1089,7 +1111,7 @@
     save(); updateFocusCounter();
   }
   function markAway(trigger) {
-    if (!state || state.phase !== "exam" || state.away) return;
+    if (!state || state.phase !== "exam" || state.slot.review || state.away) return;
     state.away = { start: Clock.now(), trigger };
     save();
   }
@@ -1123,7 +1145,7 @@
     window.addEventListener("pagehide", () => save());
     window.addEventListener("online", () => { if (state && state.phase === "submitted") deliver(); });
 
-    const examRunning = () => state && state.phase === "exam";
+    const examRunning = () => state && state.phase === "exam" && !state.slot.review;
     const restrictSelection = () => examRunning() && !state.slot.accommodated;
     document.addEventListener("contextmenu", e => { if (restrictSelection()) e.preventDefault(); });
     ["copy", "cut"].forEach(t => document.addEventListener(t, e => {
@@ -1135,7 +1157,7 @@
 
     $("btn-prev").addEventListener("click", () => goTo(state.current - 1));
     $("btn-next").addEventListener("click", () => {
-      if (state.current === state.order.length - 1) openSubmitDialog(); else goTo(state.current + 1);
+      if (state.current === state.order.length - 1) { if (state.slot.review) goTo(0); else openSubmitDialog(); } else goTo(state.current + 1);
     });
     $("btn-flag").addEventListener("click", () => {
       if (state.phase !== "exam" || state.frozen) return;
@@ -1161,7 +1183,7 @@
      13. SUBMISSION, CERTIFICATE, EMERGENCY CODE (no score: no key here)
      =================================================================== */
   function submit(reason) {
-    if (!state || state.phase !== "exam") return;
+    if (!state || state.phase !== "exam" || state.slot.review) return;
     stopSpeech();
     const now = Clock.now();
     if (state.away) closeAway(now, "Absence still open at submission");
@@ -1193,7 +1215,7 @@
       st: [s.student.firstName, s.student.lastName, s.student.email],
       t: [s.startedAt, s.submission.submittedAt, s.endsAt],
       r: s.submission.reason === "timeout" ? "T" : "M",
-      m: s.slot.multiplier, sl: s.slot.label, ac: !!s.slot.accommodated, rd: { ...readingPrefs },
+      rv: !!s.slot.review, m: s.slot.multiplier, sl: s.slot.label, ac: !!s.slot.accommodated, rd: { ...readingPrefs },
       ck: [s.clock.source === "server" ? "S" : "D", s.clock.offsetMs],
       cf: s.codeFailures || 0,
       a: s.order.map(qid => [qid, s.answers[qid] != null ? s.answers[qid] : null, s.flags[qid] ? 1 : 0]),
@@ -1275,7 +1297,7 @@
   /* ---------- Automatic delivery (Google Apps Script) ---------- */
   let delivering = false;
   async function deliver() {
-    if (!EXAM.submitUrl || !state || state.phase !== "submitted" || delivering) return;
+    if (!EXAM.submitUrl || !state || state.slot.review || state.phase !== "submitted" || delivering) return;
     const d = state.delivery || (state.delivery = { status: "pending", attempts: 0 });
     if (d.status === "confirmed") return;
     delivering = true;
@@ -1400,7 +1422,7 @@
     $("clock-note").textContent = Clock.source === "server" ? "Time checked against the exam server." : "Time taken from this device.";
 
     const saved = load();
-    if (saved && saved.v === STATE_VERSION && saved.examId === EXAM.examId && Array.isArray(saved.bank)) {
+    if (saved && (!EXAM.bankRevision || saved.bankRevision === EXAM.bankRevision) && !!(saved.slot && saved.slot.review) === REVIEW_REQUEST && saved.v === STATE_VERSION && saved.examId === EXAM.examId && Array.isArray(saved.bank)) {
       state = saved;
       setBank(state.bank);
       state.order = state.order.filter(id => qById.has(id));
@@ -1414,7 +1436,7 @@
     }
     state = null;
     showView("login");
-    $("start-btn").textContent = "Start Quiz";
+    $("start-btn").textContent = REVIEW_REQUEST ? "Open instructor review" : "Start Quiz";
     startGate();
   }
 
